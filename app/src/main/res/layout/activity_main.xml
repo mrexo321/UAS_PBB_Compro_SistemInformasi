@@ -1,19 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#00B6B6"
+    android:padding="16dp"
+    >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="horizontal"
+        android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- Teks pertama -->
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Sistem Informasi"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:gravity="start" />
+
+        <!-- Hamburger Menu -->
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Sistem Informasi"
+            android:src="@drawable/hamburger_menu"
+            android:gravity="end" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="261dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="0dp"
+            android:text="Sistem Informasi"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="0dp"
+            android:text="Sistem Informasi merupakan bla bla bla bla bla bla"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_width="89dp"
+            android:layout_height="37dp"
+            android:background="#30CED0"
+            android:gravity="center"
+            android:text="tes"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
